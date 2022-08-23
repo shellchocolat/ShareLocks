@@ -93,7 +93,11 @@
                                     <tr class="has-background-white">
                                 {% endif %}
                                 
-                                <th>{{ pin.position }}</th>
+                                {% if pin.warning == true %}
+                                    <th>{{ pin.position }} (*)</th>
+                                {% else %}
+                                    <th>{{ pin.position }}</th>
+                                {% endif %}
                                 <td>{{ pin.shape }}</td>
                                 <td>{{ pin.confidence }}</td>
                             </tr>
@@ -105,7 +109,7 @@
 
             <div class="block">
                 <div><strong class="has-text-primary">Tips:</strong></div>
-                <div class="class content">
+                <div class="class content has-text-white">
                     <ol type="1">
                         {% for tip in models[model].tips %}
                             <li>{{ tip.content }}</li>

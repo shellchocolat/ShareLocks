@@ -11,31 +11,36 @@
                             "position": 1,
                             "shape": "spool",
                             "confidence": 100,
-                            "security": true
+                            "security": true,
+                            "warning": false
                         },
                         {
                             "position": 2,
                             "shape": "regular",
                             "confidence": 100,
-                            "security": false
+                            "security": false,
+                            "warning": false
                         },
                         {
                             "position": 3,
                             "shape": "spool",
                             "confidence": 100,
-                            "security": true
+                            "security": true,
+                            "warning": true
                         },
                         {
                             "position": 4,
                             "shape": "spool",
                             "confidence": 100,
-                            "security": true
+                            "security": true,
+                            "warning": false
                         },
                         {
                             "position": 5,
                             "shape": "spool",
                             "confidence": 100,
-                            "security": true
+                            "security": true,
+                            "warning": false
                         }
                     ],
                     "opening_method": [
@@ -60,31 +65,36 @@
                             "position": 1,
                             "shape": "spool",
                             "confidence": 100,
-                            "security": true
+                            "security": true,
+                            "warning": false
                         },
                         {
                             "position": 2,
                             "shape": "regular",
                             "confidence": 100,
-                            "security": false
+                            "security": false,
+                            "warning": false
                         },
                         {
                             "position": 3,
                             "shape": "spool",
                             "confidence": 100,
-                            "security": true
+                            "security": true,
+                            "warning": false
                         },
                         {
                             "position": 4,
                             "shape": "?",
                             "confidence": 100,
-                            "security": true
+                            "security": true,
+                            "warning": false
                         },
                         {
                             "position": 5,
                             "shape": "?",
                             "confidence": 100,
-                            "security": true
+                            "security": true,
+                            "warning": false
                         },
                         {
                             "position": 6,
