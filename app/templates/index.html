@@ -1,0 +1,123 @@
+<!-- templates/index.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<script src="{{ url_for('static', filename='js/letmein.js') }}"></script>
+
+<div class="column is-4 is-offset-4">
+    <div class="box has-background-black-ter">
+        <form method="POST" action="/">
+            <div class="field">
+                <div class="select is-medium is-fullwidth">
+                    <SELECT name="brand">
+                    {% for brand in brands %}
+                        <OPTION value={{brand}}>{{brand}}</option>
+                    {% endfor %}
+                    </SELECT>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button class="button is-medium is-fullwidth is-warning">Search</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="column is-4 is-offset-4">
+    <div class="box has-background-black-ter">
+        
+        {% for model in models %}
+        <div class="box has-background-black-ter">
+            <div class="block">
+                {% if models[model].difficulty == 'beginner' %} 
+                    <table class="table is-fullwidth has-background-success">
+                {% elif models[model].difficulty == 'intermediate' %}
+                    <table class="table is-fullwidth has-background-warning">
+                {% elif models[model].difficulty == 'expert' %}
+                        <table class="table is-fullwidth has-background-danger">
+                {% else %}
+                    <table class="table is-fullwidth has-background-black-ter">
+                {% endif %}
+                    <tr>
+                        <td><img src="/static/images/locks/{{models[model].picture}}" alt="image not found" width="112" height="28"></td>
+                        <td>
+                            <div><strong class="has-text-primary">Brand:</strong> {{models[model].brand}}</div>
+                            <div><strong class="has-text-primary">Model:</strong> {{model}}</div>
+                            <div><strong class="has-text-primary">Type:</strong> {{ models[model].type }}</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="block">
+                <div><strong class="has-text-primary">Difficulty:</strong> 
+                    {% if models[model].difficulty == 'beginner' %} 
+                        <strong class="has-text-success">
+                    {% elif models[model].difficulty == 'intermediate' %}
+                        <strong class="has-text-warning">
+                    {% elif models[model].difficulty == 'expert' %}
+                        <strong class="has-text-danger">
+                    {% else %}
+                        <strong>
+                    {% endif %}
+                    {{ models[model].difficulty }}</strong>
+                </div>
+
+                <table class="table is-fullwidth">
+                    <tbody>
+                        {% for method in models[model].opening_method %}     
+                            <tr>
+                                <th>{{ method.name }}</th>
+                                <td>{{ method.time }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="block">
+                <div><strong class="has-text-primary">#pins (sum):</strong> {{ models[model].N_pins_sum }}</div>
+                <div><strong class="has-text-primary">#pins (security):</strong> {{ models[model].N_pins_security }}</div>
+                <div><strong class="has-text-primary">#pins (regular):</strong> {{ models[model].N_pins_regular }}</div>
+
+                <table class="table is-fullwidth">
+                    <thead>
+                        <tr>
+                            <th>Position</th>
+                            <th>Shape</th>
+                            <th>Confidence (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for pin in models[model].pins %}
+                            <tr>
+                                <th>{{ pin.position }}</th>
+                                <td>{{ pin.shape }}</td>
+                                <td>{{ pin.confidence }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                    
+            </div>
+
+            <div class="block">
+                <div><strong class="has-text-primary">Tips:</strong></div>
+                <div class="class content">
+                    <ol type="1">
+                        {% for tip in models[model].tips %}
+                            <li>{{ tip.content }}</li>
+                        {% endfor %}
+                    </ol>
+                </div>
+            </div>
+
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,43 @@
+<!-- templates/base.html -->
+
+<!DOCTYPE html>
+<html class="has-background-grey-darker">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Let Me In</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+</head>
+
+<body>
+    <section class="hero is-light is-small has-background-black-ter">
+
+        <div class="hero-head">
+            <nav class="navbar is-warning" role="navigation" aria-label="main navigation">
+                <!--<div class="navbar-brand">
+                    <a class="navbar-item" href="{{ url_for('main.home') }}">
+                        <img src="{{ url_for('static', filename='let_me_in.png') }}" width="112" height="28">
+                    </a>
+                </div>-->
+              
+                <div class="navbar-menu">
+                    <div class="navbar-start">
+                    </div>
+                        
+                    <div class="navbar-end">
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+    
+</body>
+
+</html>

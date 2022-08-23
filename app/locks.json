@@ -1,0 +1,107 @@
+{
+    "locks": {
+        "ABUS": 
+            {
+                "E50": {
+                    "brand": "ABUS",
+                    "picture": "ABUS_E50.png",
+                    "type": "paracentrique",
+                    "N_pins_sum": 5,
+                    "N_pins_regular": 1,
+                    "N_pins_security": 4,
+                    "pins": [
+                        {
+                            "position": 1,
+                            "shape": "spool",
+                            "confidence": 100
+                        },
+                        {
+                            "position": 2,
+                            "shape": "regular",
+                            "confidence": 100
+                        },
+                        {
+                            "position": 3,
+                            "shape": "spool",
+                            "confidence": 100
+                        },
+                        {
+                            "position": 4,
+                            "shape": "spool",
+                            "confidence": 100
+                        },
+                        {
+                            "position": 5,
+                            "shape": "spool",
+                            "confidence": 100
+                        }
+                    ],
+                    "opening_method": [
+                        {
+                            "name": "single-pin-picking",
+                            "time": "< 5 min"
+                        }
+                    ],
+                    "difficulty": "intermediate",
+                    "tips": [
+                        {
+                            "content": "pins 3 is untouchable"
+                        }
+                    ]
+                },
+                "E60": {
+                    "brand": "ABUS",
+                    "picture": "ABUS_E60.png",
+                    "type": "paracentrique",
+                    "N_pins_sum": 6,
+                    "N_pins_regular": 2,
+                    "N_pins_security": 4,
+                    "pins": [
+                        {
+                            "position": 1,
+                            "shape": "spool",
+                            "confidence": 100
+                        },
+                        {
+                            "position": 2,
+                            "shape": "regular",
+                            "confidence": 100
+                        },
+                        {
+                            "position": 3,
+                            "shape": "spool",
+                            "confidence": 100
+                        },
+                        {
+                            "position": 4,
+                            "shape": "?",
+                            "confidence": 100
+                        },
+                        {
+                            "position": 5,
+                            "shape": "?",
+                            "confidence": 100
+                        },
+                        {
+                            "position": 6,
+                            "shape": "regular",
+                            "confidence": 100
+                        }
+                    ],
+                    "opening_method": [
+                        {
+                            "name": "single-pin-picking",
+                            "time": "< 20 min"
+                        }
+                    ],
+                    "difficulty": "expert",
+                    "tips": [
+                        {
+                            "content": ""
+                        }
+                    ]
+                }
+            }
+        
+    }
+}
