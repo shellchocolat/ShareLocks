@@ -1,8 +1,6 @@
 Start the application:
 ```
-$ export FLASK_DEBUG=1
-$ export FLASK_APP=app
-$ flask run -h 0.0.0.0 -p 5000
+$ gunicorn --bind 0.0.0.0:5000 "app:create_app()"
 ```
 
 If you lockpick a lock with success and want other people to do the same as you, you could fill the __locks.json__ file.
