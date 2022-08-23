@@ -77,10 +77,6 @@
             </div>
 
             <div class="block">
-                <div><strong class="has-text-primary">#pins (sum):</strong> {{ models[model].N_pins_sum }}</div>
-                <div><strong class="has-text-primary">#pins (security):</strong> {{ models[model].N_pins_security }}</div>
-                <div><strong class="has-text-primary">#pins (regular):</strong> {{ models[model].N_pins_regular }}</div>
-
                 <table class="table is-fullwidth">
                     <thead>
                         <tr>
@@ -91,7 +87,12 @@
                     </thead>
                     <tbody>
                         {% for pin in models[model].pins %}
-                            <tr>
+                                {% if pin.security == true %}
+                                    <tr class="has-background-grey-light">        
+                                {% else %}
+                                    <tr class="has-background-white">
+                                {% endif %}
+                                
                                 <th>{{ pin.position }}</th>
                                 <td>{{ pin.shape }}</td>
                                 <td>{{ pin.confidence }}</td>

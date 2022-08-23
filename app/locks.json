@@ -6,34 +6,36 @@
                     "brand": "ABUS",
                     "picture": "ABUS_E50.png",
                     "type": "paracentrique",
-                    "N_pins_sum": 5,
-                    "N_pins_regular": 1,
-                    "N_pins_security": 4,
                     "pins": [
                         {
                             "position": 1,
                             "shape": "spool",
-                            "confidence": 100
+                            "confidence": 100,
+                            "security": true
                         },
                         {
                             "position": 2,
                             "shape": "regular",
-                            "confidence": 100
+                            "confidence": 100,
+                            "security": false
                         },
                         {
                             "position": 3,
                             "shape": "spool",
-                            "confidence": 100
+                            "confidence": 100,
+                            "security": true
                         },
                         {
                             "position": 4,
                             "shape": "spool",
-                            "confidence": 100
+                            "confidence": 100,
+                            "security": true
                         },
                         {
                             "position": 5,
                             "shape": "spool",
-                            "confidence": 100
+                            "confidence": 100,
+                            "security": true
                         }
                     ],
                     "opening_method": [
@@ -53,39 +55,42 @@
                     "brand": "ABUS",
                     "picture": "ABUS_E60.png",
                     "type": "paracentrique",
-                    "N_pins_sum": 6,
-                    "N_pins_regular": 2,
-                    "N_pins_security": 4,
                     "pins": [
                         {
                             "position": 1,
                             "shape": "spool",
-                            "confidence": 100
+                            "confidence": 100,
+                            "security": true
                         },
                         {
                             "position": 2,
                             "shape": "regular",
-                            "confidence": 100
+                            "confidence": 100,
+                            "security": false
                         },
                         {
                             "position": 3,
                             "shape": "spool",
-                            "confidence": 100
+                            "confidence": 100,
+                            "security": true
                         },
                         {
                             "position": 4,
                             "shape": "?",
-                            "confidence": 100
+                            "confidence": 100,
+                            "security": true
                         },
                         {
                             "position": 5,
                             "shape": "?",
-                            "confidence": 100
+                            "confidence": 100,
+                            "security": true
                         },
                         {
                             "position": 6,
                             "shape": "regular",
-                            "confidence": 100
+                            "confidence": 100,
+                            "security": false
                         }
                     ],
                     "opening_method": [
