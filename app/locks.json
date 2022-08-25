@@ -173,6 +173,75 @@
                     "difficulty": "beginner",
                     "tips": [
                         {
+                            "content": ""
+                        }
+                    ]
+                }
+            },
+            "YELLOW LINE": 
+            {
+                "unknown_1": {
+                    "brand": "YELLOW LINE (CYL)",
+                    "picture": "YELLOW_LINE_unknown_1.png",
+                    "type": "paracentrique",
+                    "pins": [
+                        {
+                            "position": 1,
+                            "shape": "regular",
+                            "confidence": 100,
+                            "security": false,
+                            "warning": false
+                        },
+                        {
+                            "position": 2,
+                            "shape": "regular",
+                            "confidence": 100,
+                            "security": false,
+                            "warning": false
+                        },
+                        {
+                            "position": 3,
+                            "shape": "regular",
+                            "confidence": 100,
+                            "security": false,
+                            "warning": false
+                        },
+                        {
+                            "position": 4,
+                            "shape": "regular",
+                            "confidence": 100,
+                            "security": false,
+                            "warning": false
+                        },
+                        {
+                            "position": 5,
+                            "shape": "regular",
+                            "confidence": 100,
+                            "security": false,
+                            "warning": false
+                        },
+                        {
+                            "position": 5,
+                            "shape": "regular",
+                            "confidence": 100,
+                            "security": false,
+                            "warning": false
+                        }
+                    ],
+                    "opening_method": [
+                        {
+                            "name": "racking",
+                            "time": "< 3 min"
+                        },
+                        {
+                            "name": "single-pin-picking",
+                            "time": "< 5 min"
+                        }
+                    ],
+                    "difficulty": "beginner",
+                    "tips": [
+                        {
+                            "content": "The relevant pins are at the bottom of the lock. Do not touch the first pins."
                         }
                     ]
                 }
