@@ -221,7 +221,7 @@
                             "warning": false
                         },
                         {
-                            "position": 5,
+                            "position": 6,
                             "shape": "regular",
                             "confidence": 100,
                             "security": false,
@@ -231,7 +231,7 @@
                     "opening_method": [
                         {
                             "name": "racking",
-                            "time": "< 3 min"
+                            "time": "< 1 min"
                         },
                         {
                             "name": "single-pin-picking",
