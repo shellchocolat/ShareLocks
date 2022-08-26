@@ -127,35 +127,35 @@
                         {
                             "position": 1,
                             "shape": "regular",
-                            "confidence": 100,
+                            "confidence": 50,
                             "security": false,
                             "warning": false
                         },
                         {
                             "position": 2,
                             "shape": "spool",
-                            "confidence": 100,
+                            "confidence": 50,
                             "security": true,
                             "warning": false
                         },
                         {
                             "position": 3,
                             "shape": "spool",
-                            "confidence": 100,
+                            "confidence": 50,
                             "security": true,
                             "warning": true
                         },
                         {
                             "position": 4,
                             "shape": "spool",
-                            "confidence": 100,
+                            "confidence": 50,
                             "security": true,
                             "warning": false
                         },
                         {
                             "position": 5,
                             "shape": "spool",
-                            "confidence": 100,
+                            "confidence": 50,
                             "security": true,
                             "warning": false
                         }
