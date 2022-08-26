@@ -117,6 +117,63 @@
                     ]
                 }
             },
+        "BRICARD": 
+            {
+                "alpha": {
+                    "brand": "BRICARD",
+                    "picture": "BRICARD_alpha.png",
+                    "type": "paracentrique",
+                    "pins": [
+                        {
+                            "position": 1,
+                            "shape": "regular",
+                            "confidence": 100,
+                            "security": false,
+                            "warning": false
+                        },
+                        {
+                            "position": 2,
+                            "shape": "spool",
+                            "confidence": 100,
+                            "security": true,
+                            "warning": false
+                        },
+                        {
+                            "position": 3,
+                            "shape": "spool",
+                            "confidence": 100,
+                            "security": true,
+                            "warning": true
+                        },
+                        {
+                            "position": 4,
+                            "shape": "spool",
+                            "confidence": 100,
+                            "security": true,
+                            "warning": false
+                        },
+                        {
+                            "position": 5,
+                            "shape": "spool",
+                            "confidence": 100,
+                            "security": true,
+                            "warning": false
+                        }
+                    ],
+                    "opening_method": [
+                        {
+                            "name": "single-pin-picking",
+                            "time": "< 5 min"
+                        }
+                    ],
+                    "difficulty": "intermediate",
+                    "tips": [
+                        {
+                            "content": "pins 3 is untouchable"
+                        }
+                    ]
+                }
+            },
         "THIRARD": 
             {
                 "unknown_1": {
