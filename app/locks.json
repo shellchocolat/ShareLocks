@@ -175,6 +175,63 @@
                 ]
             }
         },
+        "MASTER": {
+            "security_40mm": {
+                "brand": "MASTER",
+                "picture": "MASTER_security_40mm.png",
+                "type": "paracentrique",
+                "num_pins": 5,
+                "pins": [
+                    {
+                        "position": 1,
+                        "shape": "regular",
+                        "confidence": 50,
+                        "security": false,
+                        "warning": false
+                    },
+                    {
+                        "position": 2,
+                        "shape": "regular",
+                        "confidence": 50,
+                        "security": false,
+                        "warning": false
+                    },
+                    {
+                        "position": 3,
+                        "shape": "regular",
+                        "confidence": 50,
+                        "security": false,
+                        "warning": false
+                    },
+                    {
+                        "position": 4,
+                        "shape": "regular",
+                        "confidence": 50,
+                        "security": false,
+                        "warning": true
+                    },
+                    {
+                        "position": 5,
+                        "shape": "regular",
+                        "confidence": 50,
+                        "security": false,
+                        "warning": true
+                    }
+                ],
+                "opening_method": [
+                    {
+                        "name": "racking",
+                        "time": "< 30 s"
+                    }
+                ],
+                "difficulty": "beginner",
+                "tips": [
+                    {
+                        "content": "The last 2 pins are relevants"
+                    }
+                ]
+            }
+        },
         "THIRARD": {
             "unknown_1": {
                 "brand": "THIRARD",
