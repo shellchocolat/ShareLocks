@@ -1,308 +1,363 @@
 {
     "locks": {
-        "ABUS": 
-            {
-                "E50": {
-                    "brand": "ABUS",
-                    "picture": "ABUS_E50.png",
-                    "type": "paracentrique",
-                    "pins": [
-                        {
-                            "position": 1,
-                            "shape": "spool",
-                            "confidence": 100,
-                            "security": true,
-                            "warning": false
-                        },
-                        {
-                            "position": 2,
-                            "shape": "regular",
-                            "confidence": 100,
-                            "security": false,
-                            "warning": false
-                        },
-                        {
-                            "position": 3,
-                            "shape": "spool",
-                            "confidence": 100,
-                            "security": true,
-                            "warning": true
-                        },
-                        {
-                            "position": 4,
-                            "shape": "spool",
-                            "confidence": 100,
-                            "security": true,
-                            "warning": false
-                        },
-                        {
-                            "position": 5,
-                            "shape": "spool",
-                            "confidence": 100,
-                            "security": true,
-                            "warning": false
-                        }
-                    ],
-                    "opening_method": [
-                        {
-                            "name": "single-pin-picking",
-                            "time": "< 5 min"
-                        }
-                    ],
-                    "difficulty": "intermediate",
-                    "tips": [
-                        {
-                            "content": "pins 3 is untouchable"
-                        }
-                    ]
-                },
-                "E60": {
-                    "brand": "ABUS",
-                    "picture": "ABUS_E60.png",
-                    "type": "paracentrique",
-                    "pins": [
-                        {
-                            "position": 1,
-                            "shape": "spool",
-                            "confidence": 100,
-                            "security": true,
-                            "warning": false
-                        },
-                        {
-                            "position": 2,
-                            "shape": "regular",
-                            "confidence": 100,
-                            "security": false,
-                            "warning": false
-                        },
-                        {
-                            "position": 3,
-                            "shape": "spool",
-                            "confidence": 100,
-                            "security": true,
-                            "warning": false
-                        },
-                        {
-                            "position": 4,
-                            "shape": "?",
-                            "confidence": 100,
-                            "security": true,
-                            "warning": false
-                        },
-                        {
-                            "position": 5,
-                            "shape": "?",
-                            "confidence": 100,
-                            "security": true,
-                            "warning": false
-                        },
-                        {
-                            "position": 6,
-                            "shape": "regular",
-                            "confidence": 100,
-                            "security": false
-                        }
-                    ],
-                    "opening_method": [
-                        {
-                            "name": "single-pin-picking",
-                            "time": "< 20 min"
-                        }
-                    ],
-                    "difficulty": "expert",
-                    "tips": [
-                        {
-                            "content": ""
-                        }
-                    ]
-                }
+        "ABUS": {
+            "E50": {
+                "brand": "ABUS",
+                "picture": "ABUS_E50.png",
+                "type": "paracentrique",
+                "num_pins": 5,
+                "pins": [
+                    {
+                        "position": 1,
+                        "shape": "spool",
+                        "confidence": 100,
+                        "security": true,
+                        "warning": false
+                    },
+                    {
+                        "position": 2,
+                        "shape": "regular",
+                        "confidence": 100,
+                        "security": false,
+                        "warning": false
+                    },
+                    {
+                        "position": 3,
+                        "shape": "spool",
+                        "confidence": 100,
+                        "security": true,
+                        "warning": true
+                    },
+                    {
+                        "position": 4,
+                        "shape": "spool",
+                        "confidence": 100,
+                        "security": true,
+                        "warning": false
+                    },
+                    {
+                        "position": 5,
+                        "shape": "spool",
+                        "confidence": 100,
+                        "security": true,
+                        "warning": false
+                    }
+                ],
+                "opening_method": [
+                    {
+                        "name": "single-pin-picking",
+                        "time": "< 5 min"
+                    }
+                ],
+                "difficulty": "intermediate",
+                "tips": [
+                    {
+                        "content": "pins 3 is untouchable"
+                    }
+                ]
             },
-        "BRICARD": 
-            {
-                "alpha": {
-                    "brand": "BRICARD",
-                    "picture": "BRICARD_alpha.png",
-                    "type": "paracentrique",
-                    "pins": [
-                        {
-                            "position": 1,
-                            "shape": "regular",
-                            "confidence": 50,
-                            "security": false,
-                            "warning": false
-                        },
-                        {
-                            "position": 2,
-                            "shape": "spool",
-                            "confidence": 50,
-                            "security": true,
-                            "warning": false
-                        },
-                        {
-                            "position": 3,
-                            "shape": "spool",
-                            "confidence": 50,
-                            "security": true,
-                            "warning": true
-                        },
-                        {
-                            "position": 4,
-                            "shape": "spool",
-                            "confidence": 50,
-                            "security": true,
-                            "warning": false
-                        },
-                        {
-                            "position": 5,
-                            "shape": "spool",
-                            "confidence": 50,
-                            "security": true,
-                            "warning": false
-                        }
-                    ],
-                    "opening_method": [
-                        {
-                            "name": "single-pin-picking",
-                            "time": "< 5 min"
-                        }
-                    ],
-                    "difficulty": "intermediate",
-                    "tips": [
-                        {
-                            "content": "pins 3 is untouchable"
-                        }
-                    ]
-                }
-            },
-        "THIRARD": 
-            {
-                "unknown_1": {
-                    "brand": "THIRARD",
-                    "picture": "THIRARD_unknown_1.png",
-                    "type": "paracentrique",
-                    "pins": [
-                        {
-                            "position": 1,
-                            "shape": "regular",
-                            "confidence": 100,
-                            "security": false,
-                            "warning": false
-                        },
-                        {
-                            "position": 2,
-                            "shape": "regular",
-                            "confidence": 100,
-                            "security": false,
-                            "warning": false
-                        },
-                        {
-                            "position": 3,
-                            "shape": "regular",
-                            "confidence": 100,
-                            "security": false,
-                            "warning": false
-                        },
-                        {
-                            "position": 4,
-                            "shape": "regular",
-                            "confidence": 100,
-                            "security": false,
-                            "warning": false
-                        },
-                        {
-                            "position": 5,
-                            "shape": "regular",
-                            "confidence": 100,
-                            "security": false,
-                            "warning": false
-                        }
-                    ],
-                    "opening_method": [
-                        {
-                            "name": "racking",
-                            "time": "< 3 min"
-                        },
-                        {
-                            "name": "single-pin-picking",
-                            "time": "< 5 min"
-                        }
-                    ],
-                    "difficulty": "beginner",
-                    "tips": [
-                        {
-                            "content": ""
-                        }
-                    ]
-                }
-            },
-            "YELLOW_LINE": 
-            {
-                "unknown_1": {
-                    "brand": "YELLOW LINE (CYL)",
-                    "picture": "YELLOW_LINE_unknown_1.png",
-                    "type": "paracentrique",
-                    "pins": [
-                        {
-                            "position": 1,
-                            "shape": "regular",
-                            "confidence": 100,
-                            "security": false,
-                            "warning": false
-                        },
-                        {
-                            "position": 2,
-                            "shape": "regular",
-                            "confidence": 100,
-                            "security": false,
-                            "warning": false
-                        },
-                        {
-                            "position": 3,
-                            "shape": "regular",
-                            "confidence": 100,
-                            "security": false,
-                            "warning": false
-                        },
-                        {
-                            "position": 4,
-                            "shape": "regular",
-                            "confidence": 100,
-                            "security": false,
-                            "warning": false
-                        },
-                        {
-                            "position": 5,
-                            "shape": "regular",
-                            "confidence": 100,
-                            "security": false,
-                            "warning": false
-                        },
-                        {
-                            "position": 6,
-                            "shape": "regular",
-                            "confidence": 100,
-                            "security": false,
-                            "warning": false
-                        }
-                    ],
-                    "opening_method": [
-                        {
-                            "name": "racking",
-                            "time": "< 1 min"
-                        },
-                        {
-                            "name": "single-pin-picking",
-                            "time": "< 5 min"
-                        }
-                    ],
-                    "difficulty": "beginner",
-                    "tips": [
-                        {
-                            "content": "The relevant pins are at the bottom of the lock. Do not touch the first pins."
-                        }
-                    ]
-                }
+            "E60": {
+                "brand": "ABUS",
+                "picture": "ABUS_E60.png",
+                "type": "paracentrique",
+                "num_pins": 6,
+                "pins": [
+                    {
+                        "position": 1,
+                        "shape": "spool",
+                        "confidence": 100,
+                        "security": true,
+                        "warning": false
+                    },
+                    {
+                        "position": 2,
+                        "shape": "regular",
+                        "confidence": 100,
+                        "security": false,
+                        "warning": false
+                    },
+                    {
+                        "position": 3,
+                        "shape": "spool",
+                        "confidence": 100,
+                        "security": true,
+                        "warning": false
+                    },
+                    {
+                        "position": 4,
+                        "shape": "?",
+                        "confidence": 100,
+                        "security": true,
+                        "warning": false
+                    },
+                    {
+                        "position": 5,
+                        "shape": "?",
+                        "confidence": 100,
+                        "security": true,
+                        "warning": false
+                    },
+                    {
+                        "position": 6,
+                        "shape": "regular",
+                        "confidence": 100,
+                        "security": false
+                    }
+                ],
+                "opening_method": [
+                    {
+                        "name": "single-pin-picking",
+                        "time": "< 20 min"
+                    }
+                ],
+                "difficulty": "expert",
+                "tips": [
+                    {
+                        "content": ""
+                    }
+                ]
             }
-        
+        },
+        "BRICARD": {
+            "alpha": {
+                "brand": "BRICARD",
+                "picture": "BRICARD_alpha.png",
+                "type": "paracentrique",
+                "num_pins": 5,
+                "pins": [
+                    {
+                        "position": 1,
+                        "shape": "regular",
+                        "confidence": 50,
+                        "security": false,
+                        "warning": false
+                    },
+                    {
+                        "position": 2,
+                        "shape": "spool",
+                        "confidence": 50,
+                        "security": true,
+                        "warning": false
+                    },
+                    {
+                        "position": 3,
+                        "shape": "spool",
+                        "confidence": 50,
+                        "security": true,
+                        "warning": true
+                    },
+                    {
+                        "position": 4,
+                        "shape": "spool",
+                        "confidence": 50,
+                        "security": true,
+                        "warning": false
+                    },
+                    {
+                        "position": 5,
+                        "shape": "spool",
+                        "confidence": 50,
+                        "security": true,
+                        "warning": false
+                    }
+                ],
+                "opening_method": [
+                    {
+                        "name": "single-pin-picking",
+                        "time": "< 5 min"
+                    }
+                ],
+                "difficulty": "intermediate",
+                "tips": [
+                    {
+                        "content": "pins 3 is untouchable"
+                    }
+                ]
+            }
+        },
+        "THIRARD": {
+            "unknown_1": {
+                "brand": "THIRARD",
+                "picture": "THIRARD_unknown_1.png",
+                "type": "paracentrique",
+                "num_pins": 5,
+                "pins": [
+                    {
+                        "position": 1,
+                        "shape": "regular",
+                        "confidence": 100,
+                        "security": false,
+                        "warning": false
+                    },
+                    {
+                        "position": 2,
+                        "shape": "regular",
+                        "confidence": 100,
+                        "security": false,
+                        "warning": false
+                    },
+                    {
+                        "position": 3,
+                        "shape": "regular",
+                        "confidence": 100,
+                        "security": false,
+                        "warning": false
+                    },
+                    {
+                        "position": 4,
+                        "shape": "regular",
+                        "confidence": 100,
+                        "security": false,
+                        "warning": false
+                    },
+                    {
+                        "position": 5,
+                        "shape": "regular",
+                        "confidence": 100,
+                        "security": false,
+                        "warning": false
+                    }
+                ],
+                "opening_method": [
+                    {
+                        "name": "racking",
+                        "time": "< 3 min"
+                    },
+                    {
+                        "name": "single-pin-picking",
+                        "time": "< 5 min"
+                    }
+                ],
+                "difficulty": "beginner",
+                "tips": [
+                    {
+                        "content": ""
+                    }
+                ]
+            }
+        },
+        "YELLOW_LINE": {
+            "unknown_1": {
+                "brand": "YELLOW LINE (CYL)",
+                "picture": "YELLOW_LINE_unknown_1.png",
+                "type": "paracentrique",
+                "num_pins": 6,
+                "pins": [
+                    {
+                        "position": 1,
+                        "shape": "regular",
+                        "confidence": 100,
+                        "security": false,
+                        "warning": false
+                    },
+                    {
+                        "position": 2,
+                        "shape": "regular",
+                        "confidence": 100,
+                        "security": false,
+                        "warning": false
+                    },
+                    {
+                        "position": 3,
+                        "shape": "regular",
+                        "confidence": 100,
+                        "security": false,
+                        "warning": false
+                    },
+                    {
+                        "position": 4,
+                        "shape": "regular",
+                        "confidence": 100,
+                        "security": false,
+                        "warning": false
+                    },
+                    {
+                        "position": 5,
+                        "shape": "regular",
+                        "confidence": 100,
+                        "security": false,
+                        "warning": false
+                    },
+                    {
+                        "position": 6,
+                        "shape": "regular",
+                        "confidence": 100,
+                        "security": false,
+                        "warning": false
+                    }
+                ],
+                "opening_method": [
+                    {
+                        "name": "racking",
+                        "time": "< 1 min"
+                    },
+                    {
+                        "name": "single-pin-picking",
+                        "time": "< 5 min"
+                    }
+                ],
+                "difficulty": "beginner",
+                "tips": [
+                    {
+                        "content": "The relevant pins are at the bottom of the lock. Do not touch the first pins."
+                    }
+                ]
+            },
+            "unknown_2": {
+                "brand": "YELLOW LINE (CYL)",
+                "picture": "YELLOW_LINE_unknown_2.png",
+                "type": "paracentrique",
+                "num_pins": 5,
+                "pins": [
+                    {
+                        "position": 1,
+                        "shape": "regular",
+                        "confidence": 100,
+                        "security": false,
+                        "warning": false
+                    },
+                    {
+                        "position": 2,
+                        "shape": "regular",
+                        "confidence": 100,
+                        "security": false,
+                        "warning": false
+                    },
+                    {
+                        "position": 3,
+                        "shape": "regular",
+                        "confidence": 100,
+                        "security": false,
+                        "warning": false
+                    },
+                    {
+                        "position": 4,
+                        "shape": "regular",
+                        "confidence": 100,
+                        "security": false,
+                        "warning": false
+                    },
+                    {
+                        "position": 5,
+                        "shape": "regular",
+                        "confidence": 100,
+                        "security": false,
+                        "warning": false
+                    }
+                ],
+                "opening_method": [
+                    {
+                        "name": "racking",
+                        "time": "< 1 min"
+                    }
+                ],
+                "difficulty": "beginner",
+                "tips": [
+                    {
+                        "content": "Just rack the pins slowly"
+                    }
+                ]
+            }
+        }
     }
 }
