@@ -10,19 +10,26 @@ main = Blueprint('main', __name__)
 @cross_origin()
 def home():
     brands = list_brands()
-    return render_template('index.html', brands=brands)
+    num_locks = get_num_locks()
+    return render_template('index.html', brands=brands, num_locks=num_locks)
 
 def list_brands():
-    r = locks["locks"]
-    brands = []
-    for brand in r:
-        brands.append(brand)
+    brands = {}
+    for brand in locks["locks"]:
+        brands[brand] = len(locks["locks"][brand])
     return brands 
+
+def get_num_locks():
+    num_locks = 0
+    for brand in locks["locks"]:
+        num_locks += len(locks["locks"][brand])
+    return num_locks
 
 @main.route('/', methods=['POST'])
 @cross_origin()
 def get_lock():
     brand = str(request.form.get('brand'))
     brands = list_brands()
+    num_locks = get_num_locks()
     models = locks["locks"][brand]
-    return render_template('index.html', brands=brands, models=models)
+    return render_template('index.html', brands=brands, num_locks=num_locks, models=models)

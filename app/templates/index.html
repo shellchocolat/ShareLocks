@@ -6,13 +6,17 @@
 
 <div class="column is-4 is-offset-4">
     <div class="box has-background-black-ter">
+        <div class="field">
+            <div class="is-medium is-fullwidth has-text-white">#locks: {{ num_locks }}</div>
+        </div>
+
         <form method="POST" action="/">
             <div class="field">
                 <div class="select is-medium is-fullwidth">
                     <SELECT name="brand">
                         <OPTION value="" selected disabled hidden>-- select model here --</option>
                     {% for brand in brands %}
-                        <OPTION value={{brand}}>{{brand}}</option>
+                        <OPTION value={{brand}}>{{brand}} -- ({{brands[brand]}})</option>
                     {% endfor %}
                     </SELECT>
                 </div>
