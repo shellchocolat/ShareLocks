@@ -128,7 +128,7 @@
                     {
                         "position": 1,
                         "shape": "regular",
-                        "confidence": 50,
+                        "confidence": 100,
                         "security": false,
                         "warning": false
                     },
@@ -176,6 +176,54 @@
             }
         },
         "MASTER": {
+            "security_20mm": {
+                "brand": "MASTER",
+                "picture": "MASTER_security_20mm.png",
+                "type": "paracentrique",
+                "num_pins": 4,
+                "pins": [
+                    {
+                        "position": 1,
+                        "shape": "regular",
+                        "confidence": 100,
+                        "security": false,
+                        "warning": false
+                    },
+                    {
+                        "position": 2,
+                        "shape": "regular",
+                        "confidence": 100,
+                        "security": false,
+                        "warning": false
+                    },
+                    {
+                        "position": 3,
+                        "shape": "regular",
+                        "confidence": 100,
+                        "security": false,
+                        "warning": false
+                    },
+                    {
+                        "position": 4,
+                        "shape": "regular",
+                        "confidence": 100,
+                        "security": false,
+                        "warning": false
+                    }
+                ],
+                "opening_method": [
+                    {
+                        "name": "racking",
+                        "time": "< 30 s"
+                    }
+                ],
+                "difficulty": "beginner",
+                "tips": [
+                    {
+                        "content": "Use a 'snake' pick"
+                    }
+                ]
+            },
             "security_40mm": {
                 "brand": "MASTER",
                 "picture": "MASTER_security_40mm.png",
@@ -185,35 +233,35 @@
                     {
                         "position": 1,
                         "shape": "regular",
-                        "confidence": 50,
+                        "confidence": 100,
                         "security": false,
                         "warning": false
                     },
                     {
                         "position": 2,
                         "shape": "regular",
-                        "confidence": 50,
+                        "confidence": 100,
                         "security": false,
                         "warning": false
                     },
                     {
                         "position": 3,
                         "shape": "regular",
-                        "confidence": 50,
+                        "confidence": 100,
                         "security": false,
                         "warning": false
                     },
                     {
                         "position": 4,
                         "shape": "regular",
-                        "confidence": 50,
+                        "confidence": 100,
                         "security": false,
                         "warning": true
                     },
                     {
                         "position": 5,
                         "shape": "regular",
-                        "confidence": 50,
+                        "confidence": 100,
                         "security": false,
                         "warning": true
                     }
