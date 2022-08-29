@@ -17,11 +17,5 @@ The application will display some tips about the lock:
 
 * Some tips
 
-The application is also available on heroku
-
-```
-https://sharelocks.herokuapp.com/
-```
-
 
 ![](images/screen.png)
